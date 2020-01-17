@@ -163,6 +163,9 @@ nav a:hover {
 html, body{
   margin: 0 auto;
   padding: 0 auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 p{
@@ -256,6 +259,7 @@ p{
       margin: 0 auto;
       width: 80%;
       display: inline-block;
+      hyphens: none;
     }
     .titleImg{
       /* background-color: black; */
