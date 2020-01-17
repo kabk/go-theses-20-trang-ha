@@ -131,4 +131,18 @@ $(document).ready(function(){
     // set the type of token to animate (available types: 'char' and 'word')
     type: 'char'
   });
+
+
+  $(".extraSpace2").each(function(){
+    const curtainH = $(this).parent().height();
+    console.log(curtainH);
+    const curtainpH = $(".extraSpace2").height();
+    const curtainOffTop = (curtainH - curtainpH)/2;
+    $(this).css({
+      "margin-top" : curtainOffTop,
+    });
+  });
+
+
+
 });
