@@ -168,8 +168,8 @@ html, body{
 p{
   margin: 0 auto;
   padding: 0 auto;
-  font-size: 1rem;
-  line-height: 1.1rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
 }
 .navigation{
   width: 100%;
@@ -183,14 +183,13 @@ p{
     border: solid black 1px;
     flex-grow: 1;
     display: inline-block;
-    /* border: solid black 1px; */
     border-radius: 20px;
     margin-top: 1%;
     padding: 8px 10px 8px 10px;
   }
 
   .navButton p{
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .navButton:hover{
@@ -251,10 +250,10 @@ p{
     .titleBig{
       /* background-color: blue; */
       font-family: "parm body reg";
-      font-size: 3rem;
-      line-height: 3rem;
+      font-size: 4rem;
+      line-height: 4rem;
       margin: 0 auto;
-      width: 50%;
+      width: 80%;
       display: inline-block;
     }
     .titleImg{
