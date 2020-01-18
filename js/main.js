@@ -132,12 +132,12 @@ $(document).ready(function(){
     type: 'char'
   });
 
-
+// Veritcal centering the name of windows
   $(".extraSpace2").each(function(){
     const curtainH = $(this).parent().height();
-    console.log(curtainH);
-    const curtainpH = $(".extraSpace2").height();
+    const curtainpH = $(this).height();
     const curtainOffTop = (curtainH - curtainpH)/2;
+    console.log(curtainH);
     $(this).css({
       "margin-top" : curtainOffTop,
     });
@@ -149,6 +149,8 @@ $(document).ready(function(){
   // draggable window shade
      dragElement(document.getElementById("window-shade"));
      dragElement(document.getElementById("window-shade2"));
+     dragElement(document.getElementById("window-shade3"));
+     dragElement(document.getElementById("window-shade4"));
 
      function dragElement(elmnt) {
        var x_1 = 0,
