@@ -291,6 +291,9 @@ p{
     }
 
     .imgAbstract{
+      background-image: url("https://disturbmenot.co/wp-content/uploads/2019/11/cat-4446094_1920-e1573570633979.jpg");
+      background-size:contain;
+      background-attachment: fixed;
       height: 100%;
       width: 100%;
       position: relative;
