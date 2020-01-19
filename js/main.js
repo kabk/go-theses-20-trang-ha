@@ -2,6 +2,7 @@
 
 
 $(document).ready(function(){
+
   $('.nav3').click(function(){
     $('.commoItem').toggleClass('commoItemClicked');
   });
@@ -17,6 +18,8 @@ $(document).ready(function(){
   $('.nav7').click(function(){
     $('.communiItem').toggleClass('communiItemClicked');
   });
+
+//animate text footnote
   $('.forTheFirstTime').textillate({
     loop: true,
     in: {
@@ -53,17 +56,18 @@ $(document).ready(function(){
     callback: function () {}
   },
   });
-  $('.taste').textillate({
+
+  $('.fnt_').textillate({
     loop: true,
     in: {
   	// set the effect name
-    effect: 'rollIn',
+    effect: 'flash',
 
     // set the delay factor applied to each consecutive character
     delayScale: 1.5,
 
     // set the delay between each character
-    delay: 70,
+    delay: 50,
 
     // set to true to animate all the characters at the same time
     sync: false,
@@ -80,57 +84,16 @@ $(document).ready(function(){
     callback: function () {}
   },
     out: {
-    effect: 'rollOut',
-    delayScale: 1,
-    delay: 0,
+    effect: 'flash',
+    delayScale: 2.5,
+    delay: 50,
     sync: false,
     shuffle: true,
     reverse: false,
     callback: function () {}
   },
   });
-  $('.whenYouTouchUpon').textillate({
-    loop: true,
-    minDisplayTime: 5000,
-      in: {
-    	// set the effect name
-      effect: 'shake',
 
-      // set the delay factor applied to each consecutive character
-      delayScale: 1,
-
-      // set the delay between each character
-      delay: 15,
-
-      // set to true to animate all the characters at the same time
-      sync: false,
-
-      // randomize the character sequence
-      // (note that shuffle doesn't make sense with sync = true)
-      shuffle: true,
-
-      // reverse the character sequence
-      // (note that reverse doesn't make sense with sync = true)
-      reverse: false,
-
-      // callback that executes once the animation has finished
-      callback: function () {}
-      },
-      out: {
-      effect: 'shake',
-      delayScale: 1,
-      delay: 15,
-      sync: false,
-      shuffle: true,
-      reverse: false,
-      callback: function () {}
-      },
-    // callback that executes once textillate has finished
-    callback: function () {},
-
-    // set the type of token to animate (available types: 'char' and 'word')
-    type: 'char'
-  });
 
 // Veritcal centering the name of windows
   $(".extraSpace2").each(function(){
