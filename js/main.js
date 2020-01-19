@@ -3,6 +3,28 @@
 
 $(document).ready(function(){
 
+
+//image horizontal center
+  const screenW = $(window).width();
+  const screenH = $(window).height();
+  const imgW = 50;
+  $('img').each(function(){
+    const imgW = $(this).width();
+    const centerW  = (screenW - imgW)/2;
+    $(this).css('left',centerW);
+  });
+
+
+  // const imgTop = 50;
+  $('img').each(function(){
+    const imgTopH = $(this).height();
+    const imgTop = (screenH-imgTopH)/2;
+    $(this).css('top',imgTop);
+  });
+
+  // alert('img top is ' + text($('img').parent()));
+
+
   $('.nav3').click(function(){
     $('.commoItem').toggleClass('commoItemClicked');
   });
