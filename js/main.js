@@ -8,14 +8,11 @@ $(document).ready(function(){
 
 //image  center
 
-  // const imgW = 50;
   $('img').each(function(){
     const screenW = $(window).width();
-    // const screenH = $(window).height();
     const imgW = $(this).width();
     const imgTopH = $(this).height()/2;
     const centerW  = (screenW - imgW)/2;
-    // const imgTop = (screenH - imgTopH)/2;
     $(this).css('left',centerW);
 
 
@@ -27,7 +24,6 @@ $(document).ready(function(){
   });
   lazyLoadInstance.update();
 
-  // alert('img top is ' + text($('img').parent()));
 
 
   $('.nav3').click(function(){

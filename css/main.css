@@ -395,8 +395,7 @@ nav a:hover {
      position: fixed;
      background: red;
      }
-
-     pointer-events: none;
+     img{
        width:100%;
        position: fixed;
        top: 50%;
@@ -478,7 +477,6 @@ font-size: 0.8rem;
       }
 
       img{
-        pointer-events: none;
         width:100%;
         position: fixed;
         top: 50%;
@@ -600,8 +598,7 @@ font-size: 0.8rem;
 
       }
 
-
-      pointer-events: none;
+      img{
         width:50%;
         position: fixed;
         top: 50%;
@@ -667,8 +664,7 @@ font-size: 0.8rem;
 
         }
 
-
-        pointer-events: none;
+        img{
           width:50%;
           position: fixed;
           top: 50%;
