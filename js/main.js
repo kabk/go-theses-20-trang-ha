@@ -162,7 +162,13 @@ $(document).ready(function(){
      }
 
 
-
+const refLinks = ["cat","fish","plane","tower"];
+for(i=0;i<=3;i++){
+  const txt = i + " " + refLinks[i];
+  const $div = ("<div class='refBox " + "refs_" + i + "'>" + "<p>" + refLinks[i] + "</p>" + "</div>");
+  $(".motherWrapper").append($div);
+  console.log(txt);
+}
 });
 
 // $(window).scroll(function(){
