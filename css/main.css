@@ -400,6 +400,16 @@ nav a:hover {
        height: 20rem;
      }
 
+     .largeImg{
+        transform: scale(1.5);
+      }
+   .blackBackDrop{
+     background-color: rgb(124, 124, 124);
+     /* background: url('../img/umami_bg.jpg'); */
+     background-size: 200%;
+
+   }
+
 
 
 /* ==========================================================================
@@ -463,6 +473,16 @@ nav a:hover {
         width: 100%;
         height: 20rem;
       }
+
+      .largeImg{
+        transform: scale(1.5);
+      }
+    .blackBackDrop{
+      background-color: rgb(124, 124, 124);
+      /* background: url('../img/umami_bg.jpg'); */
+      background-size: 200%;
+
+    }
 
 
 
@@ -566,6 +586,9 @@ nav a:hover {
       .smallImg{
         width:25%;
       }
+      .largeImg{
+        transform: scale(1);
+      }
 }
 
 @media only screen and (min-width: 1140px) {
@@ -621,6 +644,9 @@ nav a:hover {
         }
         .smallImg{
           width:25%;
+        }
+        .largeImg{
+          transform: scale(1);
         }
 }
 /* ==========================================================================
