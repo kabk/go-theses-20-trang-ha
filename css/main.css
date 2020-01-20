@@ -418,6 +418,12 @@ nav a:hover {
    }
 
 
+.caption{
+font-size: 0.8rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: 1rem;
+  line-height: 0.9rem;}
 
 /* ==========================================================================
    Media Queries
@@ -493,6 +499,12 @@ nav a:hover {
     }
 
 
+.caption{
+font-size: 0.8rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: 1rem;
+  line-height: 0.9rem;}
 
 /* ========================
     INTERMEDIATE: IE Fixes
@@ -598,6 +610,12 @@ nav a:hover {
       .largeImg{
         transform: scale(1);
       }
+      .caption{
+      font-size: 0.8rem;
+      margin-left: 4rem;
+      margin-right: 4rem;
+      margin-top: 1rem;
+      line-height: 0.9rem;}
 }
 
 @media only screen and (min-width: 1140px) {
@@ -652,7 +670,12 @@ nav a:hover {
           top: 50%;
           transform: translate(0%, -50%);
         }
-    
+    .caption{
+    font-size: 0.8rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 1rem;
+    line-height: 0.9rem;}
 }
 /* ==========================================================================
    Helper classes
