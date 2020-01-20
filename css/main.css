@@ -281,7 +281,7 @@ nav a:hover {
        }
 
        .imgHolder{
-         background-attachment: fixed;
+         /* background-attachment: fixed; */
          height: 100%;
          width: 100%;
          position: relative;
@@ -551,11 +551,20 @@ nav a:hover {
         width: 100%;
         height: 27rem;
       }
+      .blackBackDrop{
+        background-color: rgb(124, 124, 124);
+        /* background: url('../img/umami_bg.jpg'); */
+        background-size: 200%;
+
+      }
 
       img{
-        width:60%;
+        width:50%;
         position: fixed;
         top: 100px;
+      }
+      .smallImg{
+        width:25%;
       }
 }
 
@@ -598,11 +607,20 @@ nav a:hover {
           width: 100%;
           height: 27rem;
         }
+        .blackBackDrop{
+          background-color: rgb(124, 124, 124);
+          /* background: url('../img/umami_bg.jpg'); */
+          background-size: 200%;
+
+        }
 
         img{
-          width:60%;
+          width:50%;
           position: fixed;
           top: 100px;
+        }
+        .smallImg{
+          width:25%;
         }
 }
 /* ==========================================================================
