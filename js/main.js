@@ -7,7 +7,7 @@ $(document).ready(function(){
 //image horizontal center
   const screenW = $(window).width();
   const screenH = $(window).height();
-  const imgW = 50;
+  // const imgW = 50;
   $('img').each(function(){
     const imgW = $(this).width();
     const centerW  = (screenW - imgW)/2;
