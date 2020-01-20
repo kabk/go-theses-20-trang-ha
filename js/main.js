@@ -14,16 +14,18 @@ $(document).ready(function(){
     const imgTopH = $(this).height()/2;
     const centerW  = (screenW - imgW)/2;
     $(this).css('left',centerW);
-
-
   });
 
-  // var lazyLoadInstance = new LazyLoad({
-  //     elements_selector: ".lazy",
-  //     // load_delay: 300
-  //     // ... more custom settings?
-  // });
-  // lazyLoadInstance.update();
+
+// $('.navButton').click(function(){
+//   $(this).hide();
+// });
+  var lazyLoadInstance = new LazyLoad({
+      elements_selector: ".lazy",
+      // load_delay: 300
+      // ... more custom settings?
+  });
+  lazyLoadInstance.update();
 
 
 
