@@ -374,6 +374,7 @@ nav a:hover {
 
    .motherWrapper{
      justify-content: center;
+     display: flex;
    }
 
    .containColumn1{
@@ -413,7 +414,7 @@ nav a:hover {
    .blackBackDrop{
      background-color: rgb(124, 124, 124);
      /* background: url('../img/umami_bg.jpg'); */
-     background-size: 200%;
+     /* background-size: 200%; */
 
    }
 
@@ -454,6 +455,7 @@ font-size: 0.8rem;
 
     .motherWrapper{
       justify-content: center;
+      display: flex;
     }
 
     .containColumn1{
@@ -464,14 +466,14 @@ font-size: 0.8rem;
     .footNoteCol{
       left: 0;
       height: 100%;
-      width: 5%;
+      width: 0%;
       position: fixed;
       background: red;
       }
     .extraImgCol{
       left: 0;
       height: 100%;
-      width: 5%;
+      width: 0%;
       position: fixed;
       background: red;
       }
@@ -494,7 +496,7 @@ font-size: 0.8rem;
     .blackBackDrop{
       background-color: rgb(124, 124, 124);
       /* background: url('../img/umami_bg.jpg'); */
-      background-size: 200%;
+      /* background-size: 200%; */
 
     }
 
@@ -594,7 +596,7 @@ font-size: 0.8rem;
       .blackBackDrop{
         background-color: rgb(124, 124, 124);
         /* background: url('../img/umami_bg.jpg'); */
-        background-size: 200%;
+        /* background-size: 200%; */
 
       }
 
@@ -660,7 +662,7 @@ font-size: 0.8rem;
         .blackBackDrop{
           background-color: rgb(124, 124, 124);
           /* background: url('../img/umami_bg.jpg'); */
-          background-size: 200%;
+          /* background-size: 200%; */
 
         }
 
@@ -668,14 +670,14 @@ font-size: 0.8rem;
           width:50%;
           position: fixed;
           top: 50%;
-          transform: translate(0%, -50%);
+          /* transform: translate(0%, -50%); */
         }
-    .caption{
-    font-size: 0.8rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    margin-top: 1rem;
-    line-height: 0.9rem;}
+            .caption{
+            font-size: 0.8rem;
+            margin-left: 4rem;
+            margin-right: 4rem;
+            margin-top: 1rem;
+            line-height: 0.9rem;}
 }
 /* ==========================================================================
    Helper classes
