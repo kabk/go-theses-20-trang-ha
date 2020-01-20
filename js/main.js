@@ -4,23 +4,28 @@
 $(document).ready(function(){
 
 
-//image horizontal center
-  const screenW = $(window).width();
-  const screenH = $(window).height();
+
+
+//image  center
+
   // const imgW = 50;
   $('img').each(function(){
+    const screenW = $(window).width();
+    // const screenH = $(window).height();
     const imgW = $(this).width();
+    const imgTopH = $(this).height()/2;
     const centerW  = (screenW - imgW)/2;
+    // const imgTop = (screenH - imgTopH)/2;
     $(this).css('left',centerW);
-  });
 
 
-  // const imgTop = 50;
-  $('img').each(function(){
-    const imgTopH = $(this).height();
-    const imgTop = (screenH-imgTopH)/2;
-    $(this).css('top',imgTop);
   });
+  var lazyLoadInstance = new LazyLoad({
+      elements_selector: ".lazy",
+      // load_delay: 300
+      // ... more custom settings?
+  });
+  lazyLoadInstance.update();
 
   // alert('img top is ' + text($('img').parent()));
 
@@ -95,9 +100,20 @@ $(document).ready(function(){
 
   // draggable window shade
      dragElement(document.getElementById("window-shade"));
+     dragElement(document.getElementById("window-shade1"));
      dragElement(document.getElementById("window-shade2"));
      dragElement(document.getElementById("window-shade3"));
      dragElement(document.getElementById("window-shade4"));
+     dragElement(document.getElementById("window-shade5"));
+     dragElement(document.getElementById("window-shade6"));
+     dragElement(document.getElementById("window-shade7"));
+     dragElement(document.getElementById("window-shade8"));
+     dragElement(document.getElementById("window-shade9"));
+     dragElement(document.getElementById("window-shade10"));
+     // dragElement(document.getElementById("window-shade11"));
+     // dragElement(document.getElementById("window-shade12"));
+     // dragElement(document.getElementById("window-shade13"));
+     // dragElement(document.getElementById("window-shade14"));
 
      function dragElement(elmnt) {
        var x_1 = 0,
@@ -147,4 +163,9 @@ $(document).ready(function(){
      }
 
 
+
 });
+
+// $(window).scroll(function(){
+//
+// });
