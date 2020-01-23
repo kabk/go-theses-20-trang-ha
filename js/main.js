@@ -98,8 +98,6 @@ $(document).ready(function(){
 //Flight Simulator is a collaboration between Laurel Schwulst and Soft.
 
   // draggable window shade
-     dragElement(document.getElementById("window-shade"));
-     dragElement(document.getElementById("window-shade1"));
      dragElement(document.getElementById("window-shade2"));
      dragElement(document.getElementById("window-shade3"));
      dragElement(document.getElementById("window-shade4"));
@@ -109,6 +107,8 @@ $(document).ready(function(){
      dragElement(document.getElementById("window-shade8"));
      dragElement(document.getElementById("window-shade9"));
      dragElement(document.getElementById("window-shade10"));
+     dragElement(document.getElementById("window-shade11"));
+     dragElement(document.getElementById("window-shade12"));
      // dragElement(document.getElementById("window-shade11"));
      // dragElement(document.getElementById("window-shade12"));
      // dragElement(document.getElementById("window-shade13"));
@@ -167,9 +167,38 @@ for(i=0;i<=3;i++){
   const txt = i + " " + refLinks[i];
   const $div = ("<div class='refBox " + "refs_" + i + "'>" + "<p>" + refLinks[i] + "</p>" + "</div>");
   $(".motherWrapper").append($div);
-  console.log(txt);
+  // console.log(txt);
 }
+
+
+var anchor = $('.navLink');
+anchor.each(function(){
+    var newAnchor = $(this);
+  $(this).click(function(ele){
+    var idName = "#" + newAnchor.attr('id').substring(2);
+    var $idName = $(idName);
+    var scrollOffsetMob = $idName.offset().top;
+    // var scrollOffset = $idName.offset().top;
+    $('html,body').scrollTop(scrollOffsetMob);
+
+    // if ($(window).width() < 550) {
+    //   $('html,body').scrollTop(scrollOffsetMob);
+    // }else {
+    //   $('html,body').scrollTop(scrollOffset);
+    // }
+    console.log(idName);
+    ele.preventDefault();
+  });
 });
+
+$('#toTop').click(function(){
+  const $html = $('html,body').offset().top;
+  $('html,body').scrollTop($html);
+})
+
+});
+
+
 
 // $(window).scroll(function(){
 //
