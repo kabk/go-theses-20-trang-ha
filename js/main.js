@@ -167,8 +167,15 @@ for(i=0;i<=3;i++){
   const txt = i + " " + refLinks[i];
   const $div = ("<div class='refBox " + "refs_" + i + "'>" + "<p>" + refLinks[i] + "</p>" + "</div>");
   $(".motherWrapper").append($div);
+  $('.refBox').css({
+    'display': "none",
+  });
   // console.log(txt);
 }
+
+$('.fnt_').click(function(){
+  $(".refBox").toggle();
+});
 
 
 var anchor = $('.navLink');
